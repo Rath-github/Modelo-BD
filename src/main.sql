@@ -27,3 +27,11 @@ CREATE TABLE clientes (
     sal VARCHAR(16) NOT NULL,
     data_cadastro TIMESTAMP DEFAULT NOW()
 );
+
+-- Criação de tabela 
+CREATE TABLE pecas_de_roupas (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco_individual NUMERIC(10, 2) NOT NULL,
+    prazo_lavagem INT NOT NULL
+);
